@@ -7,7 +7,8 @@ module.exports = {
             password,
             name,
             description,
-            site
+            site,
+            avatar
         } = req.body;
 
         try {
@@ -24,6 +25,7 @@ module.exports = {
                 name: name,
                 description: description,
                 site: site,
+                avatar: avatar
             });
 
             return res.status(200).send({
